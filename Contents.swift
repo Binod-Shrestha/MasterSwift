@@ -1,60 +1,56 @@
 import UIKit
 
+// type inference
+var age = 40
 
-// Swift Arrays
-//creating arrays
-var kolor: [String] = ["Red", "Green", "White", "Black"]
-var kolor2: Array<String> = Array<String>()
-var mostPrefered1 = kolor[0]
-kolor[0] = "Green"
-var mostPrefered2 = kolor[0]
-// manupulation of array
+// type annotation
+var my_name: String
+my_name = "Binod Shrestha"
 
-// adding the last element
-kolor.append("Yellow")
-kolor += ["Brown","Pink"]
+// type annotation + inference
+var full_name: String = "Binod Shrestha"
+// multiple variables - type annotation shorthand
+var my_age, phone, dob, street_no: Int
+my_age = 40
+phone = 6477734536
+dob = 2012
+street_no = 6
 
-//inserting using index
-kolor.insert("Light Green", at: 2)
-kolor.insert("Red", at: 0)
-kolor.remove(at: 1)
-kolor.reverse()
-kolor.sort()
-var reveresedClasses = kolor.reversed()
-var kolorSored = kolor.sorted()
-kolor.contains("Black")
+// airthmetic operation
+var solution = 2*3/2+5
+solution *= 2
 
-//2D Arrays
-var TwoDArrays:[[String]] = [
-    ["Apple", "Mango,","Orange"],
-    ["Soda","Juice", "Beer"]
-]
+//Modulos
+var my_division = 100%9
 
-var item = TwoDArrays[0][1]
-var item2 = TwoDArrays[1][0]
+// string related
+var myfull_name: String = "Binod Shrestha"
+// counts the # of characters
+myfull_name.count
 
+// checks boolean
+myfull_name.isEmpty
 
-//=======================================
-//==========Dictionaries=================
-//=======================================
-// creating dictionaries
-var bookStore:[String:Int] = [:]
-var bookStore2:[String:Int] = ["Davis":1, "Trafalgar":2, "HMC":3]
+// checks presence of character
+myfull_name.contains("S")
 
-// All keys and Values
-var storeKeys = [String](bookStore2.keys)
-var storeValues = [Int](bookStore2.values)
+// adds the string at the end
+myfull_name.append(contentsOf: ", is a teacher.")
 
-//=========SET============
-var newSet: Set = ["apple","orange","mango","banana"]
-var newSet2: Set = ["apple","pineapple","Kiwi","mango"]
-var commonItem = newSet.intersection(newSet2)
-var subTracting = newSet.subtracting(newSet2)// remaining from newSet
-var notCommonItem = newSet.symmetricDifference(newSet2)
-var allItems = newSet.union(newSet2)
-newSet.remove("apple")
-newSet.insert("avocado")
-newSet.contains("orange")
-newSet.sorted()
-print(newSet)
+//remove characters
+myfull_name.removeLast()
+myfull_name.removeFirst()
+myfull_name.removeAll()
+myfull_name.split(separator: ",")
+
+//challenge-1
+var characterName, weaponClassification : String
+characterName = "Spiderman"
+weaponClassification = "web"
+characterName += "Mr."
+var currentMana:Double = 3.20
+var manaPercentage = String(currentMana/100)
+var debugStats = "\(characterName)\n\nPrefers: \(weaponClassification)\nCurrent Mana: \(manaPercentage)"
+
+>>>>>>> operators
 
