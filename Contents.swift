@@ -1,4 +1,5 @@
 import UIKit
+
 // Swift Arrays
 //creating arrays
 var kolor: [String] = ["Red", "Green", "White", "Black"]
@@ -56,13 +57,12 @@ newSet.contains("orange")
 newSet.sorted()
 print(newSet)
 
+// examples
 // type inference
 var age = 40
-
 // type annotation
 var my_name: String
 my_name = "Binod Shrestha"
-
 // type annotation + inference
 var full_name: String = "Binod Shrestha"
 // multiple variables - type annotation shorthand
